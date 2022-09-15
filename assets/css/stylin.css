@@ -85,13 +85,12 @@ section p {
 /* Header Styles */
 
 header {
-    position: absolute;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 35px 100px 0;
-    animation: 1s fadein 0.5s forwards;
+    animation: 0.1s fadein 0.1s forwards;
     opacity: 0;
     color: #fff;
 }
@@ -290,4 +289,306 @@ footer p {
     footer ul li {
         margin: 0 8px;
     }
+}
+/*
+
+    THE CSS BELOW NEEDS MUCH MORE WORK
+    AND IS CURRENTLY IN THE PROCESS OF
+    BEING COMPLETELY REFACTORED FOR 
+    BOTH 508 COMPLIANCE AND RESPONSIVENESS
+
+*/
+/*  About Me Page */
+
+ /* begin styling page */
+body {
+    background: #FFF;
+    font-family: 'Palanquin', sans-serif;
+}
+
+/* header styles */
+header {
+    background: #222;
+    color: #FFF;
+    padding: 20px 30px;
+}
+
+/* logo area */
+#logo {
+    display: inline-block;
+    color: #FFF;
+    text-decoration: none;
+    width: 49%; 
+}
+
+#logo img {
+    width: 50%;
+    border-radius: 3px;
+    margin-right: 8px;
+    vertical-align: middle;
+    height: 130px;
+    width: 130px;
+}
+
+/* main navigation */
+
+
+#page_title {
+    display: inline-block;
+    text-align: center;
+    font-family: 'Palanquin', sans-serif;
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.60rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 3px;
+    transition: 0.3s ease all;
+}
+
+nav ul li a:hover {
+    background: #444;
+}
+
+
+/* footer styles */
+footer {
+    background: #222;
+    color: #777;
+    padding: 40px;
+    text-align: center;
+}
+
+footer img {
+    display: block;
+    border-radius: 5px;
+    width: 80px;
+    margin: 0 auto 10px;
+}
+
+/* main content styles */
+.index_hero {
+    min-height: 800px;
+    text-align: center;
+    background-image: url(../images/photos/horsehead-nebula.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.about_hero {
+    min-height: 800px;
+    text-align: center;
+    background-image: url(../images/photos/MelbourneBeachJun2018_2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.projects_hero {
+    min-height: 800px;
+    text-align: center;
+    background-image: url(../images/photos/ng_mountains.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.ideas_hero {
+    min-height: 800px;
+    text-align: center;
+    background-image: url(../images/photos/ng_mountains.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.hero-content {
+    color: #FFF;
+    padding: 130px;
+}
+
+.hero-content h1 {
+    font-size: 6.25rem;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 3.125rem;
+}
+
+.hero-content p, h1, h4, a {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; 
+}
+
+.hero-content a {
+    display: inline-block;
+    color: #FFF;
+    border: 3px solid #FFF;
+    border-radius: 3px;
+    padding: 15px 30px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 1.75rem;
+}
+
+.hero-content a:hover {
+    background: #111;
+}
+
+/* basic site sections styles */
+.site-section {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.site-section-secondary {
+    background: #EFEFEF;
+}
+
+.site-section-inside {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-header h2 {
+    font-size: 1.875rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #777;
+}
+
+/* feature boxes */
+.feature-box {
+    display: inline-block;
+    width: 33%;
+    padding: 20px 30px;
+}
+
+.feature-box img {
+    margin-bottom: 12px;
+    width: 80px;
+    display: block;
+    margin: auto;
+}
+
+.feature-box h5 {
+    font-size: 1.55rem;
+    color: #999;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 0;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+/* testimonial section styles */ 
+.testimonial-box {
+    display: inline-block;
+    width: 33%;
+    padding: 20px 30px;
+}
+
+.testimonial-content {
+    background: #FFF;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.testimonial-author img {
+    float: left;
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.testimonial-author h5 {
+    font-size: 1.45rem;
+    margin: 0;
+    padding-top: 15px;
+}
+
+.testimonial-author span {
+    font-size: 1.10rem;
+}
+
+
+/* 
+
+    CSS for projects folder
+    
+*/
+
+/* project boxes */
+.project-box {
+    display: inline-block;
+    width: calc(1440px * 0.25);
+    height: calc(900px * 0.25);
+    overflow: hidden;
+    position: relative;
+}
+
+.project-box img {
+    margin-bottom: 12px;
+    width: 1440px;
+    height: 900px;
+    display: block;
+    margin: auto;
+}
+
+.project-box h5 {
+    font-size: 1.55rem;
+    color: #999;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 0;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.thumbnail {
+    position: relative;
+    -ms-zoom: 0.25;
+    -moz-transform: scale(0.25);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.25);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.25);
+    -webkit-transform-origin: 0 0;
+}
+
+.thumbnail:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
